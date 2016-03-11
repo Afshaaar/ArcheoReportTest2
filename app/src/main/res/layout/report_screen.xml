@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+         <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/addImageArtifact"
+             android:src="@drawable/noimage"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Details"
+        android:id="@+id/details"
+        android:layout_below="@+id/addImageArtifact"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nrInv"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true"
+        android:text="Nr Inv: " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/oggetto"
+        android:layout_below="@+id/nrInv"
+        android:layout_alignParentStart="true"
+        android:text="Oggetto:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tecnica"
+        android:layout_below="@+id/oggetto"
+        android:layout_alignParentStart="true"
+        android:text="Tecnica:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dimens"
+        android:layout_below="@+id/tecnica"
+        android:layout_alignParentStart="true"
+        android:text="Dimens:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datazione"
+        android:layout_below="@+id/dimens"
+        android:layout_alignParentStart="true"
+        android:text="Datazione:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/collaczione"
+        android:layout_below="@+id/datazione"
+        android:layout_alignParentStart="true"
+        android:text="Collaczione:" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statoConserv"
+        android:layout_below="@+id/collaczione"
+        android:layout_alignParentStart="true"
+        android:text="Stato Conserv: " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/priorita"
+        android:layout_below="@+id/statoConserv"
+        android:layout_alignParentStart="true"
+        android:text="Priorita: " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/necesitaDi"
+        android:layout_below="@+id/priorita"
+        android:layout_alignParentStart="true"
+        android:text="Necesita di: " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/interventiFatti"
+        android:layout_below="@+id/necesitaDi"
+        android:layout_alignParentStart="true"
+        android:text="Interventi Fatti:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="General Condition"
+        android:id="@+id/generalCondition"
+        android:layout_marginStart="114dp"
+        android:layout_above="@+id/nrInv"
+        android:layout_toEndOf="@+id/addImageArtifact" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Good"
+        android:id="@+id/goodCheckBox"
+        android:layout_alignTop="@+id/nrInv"
+        android:layout_alignStart="@+id/generalCondition"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fairly Good"
+        android:id="@+id/fairlyGoodCheckBox"
+        android:layout_alignTop="@+id/oggetto"
+        android:layout_alignStart="@+id/goodCheckBox"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poor"
+        android:id="@+id/poorCheckBox"
+        android:layout_below="@+id/oggetto"
+        android:layout_alignStart="@+id/fairlyGoodCheckBox"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restored"
+        android:id="@+id/restoredCheckBox"
+        android:checked="false"
+        android:layout_below="@+id/tecnica"
+        android:layout_alignStart="@+id/poorCheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ri-Composed"
+        android:id="@+id/ricomposedCheckBox"
+        android:layout_below="@+id/dimens"
+        android:layout_alignStart="@+id/restoredCheckBox"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Defects"
+        android:id="@+id/defects"
+        android:layout_marginStart="82dp"
+        android:layout_above="@+id/text1"
+        android:layout_toEndOf="@+id/generalCondition" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/crateNumber"
+        android:text="Crate Number:"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/defects" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Support Fondazione"
+        android:id="@+id/supporFondazioneCheckBox"
+        android:layout_below="@+id/crateNumber"
+        android:layout_alignStart="@+id/crateNumber"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Wrapping"
+        android:id="@+id/wrapping"
+        android:layout_below="@+id/addImageArtifact"
+        android:layout_toEndOf="@+id/supporFondazioneCheckBox" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text1"
+        android:layout_alignTop="@+id/goodCheckBox"
+        android:layout_alignStart="@+id/wrapping"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text2"
+        android:checked="false"
+        android:layout_below="@+id/text1"
+        android:layout_alignStart="@+id/text1" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text3"
+        android:checked="false"
+        android:layout_below="@+id/text2"
+        android:layout_alignStart="@+id/text2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Protection"
+        android:id="@+id/protection"
+        android:layout_below="@+id/text3"
+        android:layout_alignStart="@+id/text3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text4"
+        android:layout_below="@+id/protection"
+        android:layout_alignStart="@+id/protection"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text5"
+        android:checked="false"
+        android:layout_below="@+id/text4"
+        android:layout_alignStart="@+id/text4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Position"
+        android:id="@+id/position"
+        android:layout_below="@+id/text5"
+        android:layout_alignStart="@+id/text5" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text6"
+        android:layout_below="@+id/position"
+        android:layout_alignStart="@+id/position"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text7"
+        android:layout_below="@+id/text6"
+        android:layout_alignStart="@+id/text6"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:id="@+id/text8"
+        android:layout_below="@+id/text7"
+        android:layout_alignStart="@+id/text7"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special Care"
+        android:id="@+id/specialCareRadio"
+        android:layout_alignTop="@+id/text8"
+        android:layout_alignStart="@+id/ricomposedCheckBox"
+        android:checked="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conditioNotes"
+        android:layout_alignBottom="@+id/necesitaDi"
+        android:layout_alignStart="@+id/specialCareRadio"
+        android:text="Condition Notes:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Exit from museum"
+        android:id="@+id/textView4"
+        android:layout_alignBottom="@+id/conditioNotes"
+        android:layout_alignEnd="@+id/supporFondazioneCheckBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="End of exhibition"
+        android:id="@+id/textView5"
+        android:layout_above="@+id/interventiFatti"
+        android:layout_toEndOf="@+id/text8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Install in Exhibition"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/interventiFatti"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Return in museum"
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignEnd="@+id/textView5" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Same Condition"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Same Condition"
+        android:id="@+id/checkBox2"
+        android:checked="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView7" />
+</RelativeLayout>
+
+
+
