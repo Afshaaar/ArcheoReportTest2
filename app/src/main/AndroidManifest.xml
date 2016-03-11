@@ -23,8 +23,8 @@
             android:label="@string/title_activity_display_exhibition"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".DisplayReportActivity"
-            android:label="@string/title_activity_display_report"
+            android:name=".ReportNavigation"
+            android:label="@string/title_activity_report_navigation"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

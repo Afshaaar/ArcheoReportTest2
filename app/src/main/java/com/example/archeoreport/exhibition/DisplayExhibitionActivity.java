@@ -128,7 +128,7 @@ public class DisplayExhibitionActivity extends AppCompatActivity {
 
     public void enterReportScreen(View view)
     {
-        Intent startNewActivity = new Intent(this, DisplayReportActivity.class);
+        Intent startNewActivity = new Intent(this, ReportNavigation.class);
         startActivity(startNewActivity);
     }
 
